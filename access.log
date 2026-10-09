@@ -1,0 +1,15 @@
+2026-10-05 08:01:12 200 GET /api/users 12ms
+2026-10-05 08:01:15 404 GET /api/old-endpoint 3ms
+2026-10-05 08:02:01 200 POST /api/login 45ms
+2026-10-05 08:02:30 500 POST /api/deploy 120ms
+2026-10-05 08:03:00 200 GET /api/health 2ms
+2026-10-05 08:03:45 503 GET /api/users 5001ms
+2026-10-05 08:04:12 200 GET /api/users 15ms
+2026-10-05 08:04:55 500 POST /api/webhook 89ms
+2026-10-05 08:05:01 200 GET /api/health 3ms
+2026-10-05 08:05:30 401 POST /api/admin 8ms
+2026-10-05 08:06:00 200 GET /api/users 11ms
+2026-10-05 08:06:22 500 GET /api/reports 230ms
+2026-10-05 08:07:00 200 GET /api/health 2ms
+2026-10-05 08:07:45 403 DELETE /api/users/1 5ms
+2026-10-05 08:08:10 200 PUT /api/users/2 18ms
