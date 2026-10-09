@@ -19,4 +19,5 @@ done < "$text_file"
 
 echo "Total reachable servers: $up_count"
 echo "Total unreachable servers: $down_count"
+echo "Check completed: $(date '+%Y-%m-%d %H:%M:%S')"
 
