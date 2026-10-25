@@ -7,7 +7,8 @@ down_count=0
 while read ip;
 do
     echo "Pinging $ip"
-    if ping -c 1 -t 2 "$ip" > /dev/null 2>&1
+    if [[ "$(uname)" == "Darwin" ]]; then PING_TIMEOUT="-t 2"; else PING_TIMEOUT="-W 2"; fi
+    if ping -c 1 $PING_TIMEOUT "$ip" > /dev/null 2>&1
     then
         echo "✓ $ip is reachable"
         up_count=$((up_count + 1))

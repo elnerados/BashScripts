@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_FILE="$HOME/Desktop/Projects/DevopsPrep/lab03-bash/access.log"
+LOG_FILE="${1:-$(dirname "$0")/access.log}"
 
 REQ_200=$(awk '$3 == 200' "$LOG_FILE" | wc -l)
 REQ_500=$(awk '$3 == 500' "$LOG_FILE" | wc -l)
